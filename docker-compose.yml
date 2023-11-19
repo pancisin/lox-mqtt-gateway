@@ -1,0 +1,9 @@
+version: '2'
+services:
+  gateway:
+    build: .
+    command: lox-mqtt-gateway
+    volumes:
+      - /lox-mqtt-gw/config
+    environment:
+      NODE_CONFIG_DIR: /lox-mqtt-gw/config
